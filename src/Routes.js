@@ -9,13 +9,16 @@ function RoutesList()
 {
     return(
         <Routes>
-            <Route path='/House/:id' element={<House />} />
-            <Route path='/About' element={<About />} />
             <Route path='/Home' element={<Home />} />
             <Route path='/' element={<Home />} />
-            <Route path='*' element={<Page404 />} />
         </Routes>
     )
 }
 
 export default RoutesList
+
+{/* <Route path='/House/:id' element={<House />} />
+            <Route path='/About' element={<About />} />
+            <Route path='/Home' element={<Home />} />
+            <Route path='/' element={<Home />} />
+            <Route path='*' element={<Page404 />} />  */}
