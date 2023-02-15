@@ -6,8 +6,11 @@ body {
   font-weight: 500;
 }
 
+header {
+  margin-bottom: 150px;
+}
 main {
-  max-width: 1240px;
+  max-width:90%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -18,3 +21,4 @@ main {
   max-height: 223px;
   margin-top: 20px;
 }
+

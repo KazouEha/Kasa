@@ -1,10 +1,11 @@
 import './Card.css';
 
-function Card({img ,txt})
+function Card({houseImg ,houseId, houseTxt})
 {
     return(
         <div className="card">
-            <p className="card__Txt">{txt}</p>
+            <img className="card__Img" src={houseImg} id={houseId}/>
+            <p className="card__Txt">{houseTxt}</p>
         </div>
     )
 }
