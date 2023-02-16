@@ -1,0 +1,48 @@
+.divCard {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  width: 335px;
+  height: 255px;
+  align-items: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.card__Filter {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, black 0%, white 50%);
+  opacity: 0.3;
+}
+.card__Txt {
+  color: white;
+  margin-bottom: 15px;
+  margin-left: 19px;
+  margin-right: 19px;
+  font-size: 18px;
+  z-index: 2;
+}
+
+@media (min-width: 1000px) {
+  .divCard {
+    padding: 25px;
+  }
+  .card {
+    height: 340px;
+    width: 340px;
+  }
+}/*# sourceMappingURL=Card.css.map */

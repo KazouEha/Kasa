@@ -11,7 +11,6 @@ function Home()
         <main>
             <Banner txt={bannerText} img={bannerImg} />
             <Gallery />
-        
         </main>
     </>
     )

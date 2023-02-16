@@ -1,12 +1,19 @@
 import './Card.css';
+import {Link} from 'react-router-dom';
 
 function Card({houseImg ,houseId, houseTxt})
 {
     return(
-        <div className="card">
-            <img className="card__Img" src={houseImg} id={houseId}/>
-            <p className="card__Txt">{houseTxt}</p>
-        </div>
+            
+            <div className="divCard">
+                <Link to={`/House/${houseId}`} className="card" style={{backgroundImage: `url(${houseImg})`}}>
+                    
+                    <div className="card__Filter"></div>
+                    <div className="card__Txt">
+                        {houseTxt}
+                    </div>
+                </Link>
+            </div>
     )
 }
 

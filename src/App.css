@@ -1,14 +1,12 @@
 body {
+  margin: 0;
   position: relative;
-  height: 1024px;
+  height: 100vh;
   background: #FFFFFF;
   font-family: 'Montserrat';
   font-weight: 500;
 }
 
-header {
-  margin-bottom: 150px;
-}
 main {
   max-width:90%;
   margin: auto;
@@ -16,9 +14,4 @@ main {
   flex-direction: column;
 }
 
-.sectionBanner {
-  min-height: 111px;
-  max-height: 223px;
-  margin-top: 20px;
-}
 

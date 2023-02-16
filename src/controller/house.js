@@ -1,25 +1,43 @@
-const houses = 'houses.json'
+export async function fetchData()
+{
+    try {
+        const response = await fetch('../houses.json'
+            ,{
+            headers : { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+            });
+        const data = await response.json();
+        return data;
+      }
+      catch (error) {
+        console.log(error);
+        return [];
+      }
+}
+    
+    
+    
 
-export function fetchData(){
-    fetch(houses,
-        {
-        headers : { 
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
+export async function getHouseById(params)
+    {
+        try {
+            console.log("params",params);
+            const response = await fetch('../houses.json'
+                ,{
+                headers : { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
+                });
+            const data = await response.json();
+            const getHouse = await data.find((house) => house.id === params);
+            console.log("gethouse", getHouse);
+            return getHouse;
         }
-        })
-
-    .then(function(response){
-    console.log(response)
-    return response.json();
-    })
-
-    .then(function(data) {
-    console.log(data);
-    })
-
-    .catch(err){
-    console.log(err)
+        catch (error) {
+            console.log(error);
+            return [];
+        }
     }
-  }
-  
