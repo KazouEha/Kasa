@@ -1,0 +1,54 @@
+.divCarrousel {
+  position: relative;
+  width: 100%;
+  height: 255px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 100%;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+}
+.divCarrousel__arrows {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.divCarrousel__arrows--right {
+  height: 20px;
+  width: 12px;
+  margin-right: 10px;
+}
+.divCarrousel__arrows--left {
+  height: 20px;
+  width: 12px;
+  margin-left: 10px;
+}
+.divCarrousel__index {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .divCarrousel {
+    height: 415px;
+  }
+  .divCarrousel__arrows--right {
+    height: 79px;
+    width: 46px;
+  }
+  .divCarrousel__arrows--left {
+    height: 79px;
+    width: 46px;
+  }
+}/*# sourceMappingURL=Carrousel.css.map */

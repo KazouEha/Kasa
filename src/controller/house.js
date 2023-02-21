@@ -23,7 +23,6 @@ export async function fetchData()
 export async function getHouseById(params)
     {
         try {
-            console.log("params",params);
             const response = await fetch('../houses.json'
                 ,{
                 headers : { 
@@ -33,7 +32,6 @@ export async function getHouseById(params)
                 });
             const data = await response.json();
             const getHouse = await data.find((house) => house.id === params);
-            console.log("gethouse", getHouse);
             return getHouse;
         }
         catch (error) {

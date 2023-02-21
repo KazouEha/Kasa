@@ -1,0 +1,26 @@
+.tag {
+    height: 18px;
+    font-size:10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #FF6060;
+    color: white;
+    margin-right: 10px;
+    min-width: 84px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media (min-width: 1000px) {
+    .tag{
+        border-radius: 10px;
+        font-size: 14px;
+        height: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

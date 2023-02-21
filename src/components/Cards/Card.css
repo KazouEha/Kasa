@@ -44,5 +44,6 @@
   .card {
     height: 340px;
     width: 340px;
+    border-radius: 25px;
   }
 }/*# sourceMappingURL=Card.css.map */

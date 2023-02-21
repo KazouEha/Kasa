@@ -1,13 +1,12 @@
 .gallery {
   border-radius: 25px;
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   position: relative;
 }
 
 @media (min-width: 1000px) {
   .gallery {
     background-color: #F7F7F7;
-    justify-content: space-around;
   }
 }/*# sourceMappingURL=Gallery.css.map */

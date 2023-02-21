@@ -1,0 +1,83 @@
+.houseInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.houseInfo__loc {
+  display: flex;
+  flex-direction: column;
+}
+.houseInfo__loc--name {
+  color: #FF6060;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.houseInfo__loc--where {
+  color: #FF6060;
+  font-size: 14px;
+  height: 22px;
+  margin-bottom: 20px;
+}
+.houseInfo__loc--tags {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+.houseInfo__prez {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.houseInfo__prez--host {
+  display: flex;
+  align-items: center;
+}
+.houseInfo__prez--host-name {
+  width: 95px;
+  text-align: end;
+  color: #FF6060;
+  margin-right: 10.5px;
+}
+.houseInfo__prez--host-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+.disable {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+@media (min-width: 500px) {
+  .houseInfo {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .houseInfo__prez {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 800px) {
+  .houseInfo__loc--name {
+    font-size: 36px;
+    height: 51px;
+  }
+  .houseInfo__loc--where {
+    font-size: 18px;
+    height: 26px;
+  }
+  .houseInfo__prez--host-name {
+    font-size: 18px;
+  }
+  .houseInfo__prez--host-img {
+    width: 64px;
+    height: 64px;
+  }
+}/*# sourceMappingURL=House.css.map */
