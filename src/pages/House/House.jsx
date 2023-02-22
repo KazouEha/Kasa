@@ -3,7 +3,10 @@ import React,{useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
 import {getHouseById} from '../../controller/house';
 import Carrousel from '../../components/Carrousel/Carrousel';
-import Tag from '../../components/Tag/Tag'
+import Collapse from '../../components/Collapse/Collapse';
+import Review from '../../components/Review/Review';
+import Loader from '../../components/Loader/Loader';
+import Tag from '../../components/Tag/Tag';
 import './House.css';
 
 
@@ -19,7 +22,7 @@ function House()
                 setTimeout(() => {
                    setData(location);
                    setLoading(false);
-                }, 3000);
+                }, 2000);
                 })
             .catch((err) => {
                console.log(err);
@@ -32,7 +35,7 @@ function House()
     <>
         <main>
             { 
-                isLoading ? "coucou" :
+                isLoading ? <Loader /> :
                 (<>
                     <section>
                         <Carrousel imgArray={data.pictures} />
@@ -46,11 +49,21 @@ function House()
                             </div>
                         </div>
                         <div className="houseInfo__prez">
-                            <div className="houseInfo__prez--review">etoile</div>
+                            <div className="houseInfo__prez--review">
+                                <Review note={data.rating} />
+                            </div>
                             <div className="houseInfo__prez--host">
                                 <div className="houseInfo__prez--host-name">{data.host.name}</div>
                                 <img className="houseInfo__prez--host-img" src={data.host.picture} alt="host" />
                             </div>
+                        </div>
+                    </section>
+                    <section className='houseCollapse'>
+                        <div className='houseCollapse__div'>
+                            <Collapse title="Description" content={data.description} />
+                        </div>
+                        <div className='houseCollapse__div'>
+                            <Collapse title="Equipements" content={data.equipments} />
                         </div>
                     </section>
                 </>)

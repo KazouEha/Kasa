@@ -4,12 +4,13 @@ import { NavLink } from 'react-router-dom';
 
 function Header()
 {
+    
     return(
         <header className="header">
             <img className="header__logo" src={logo} alt="logo kasa" />
             <nav className="header__nav">
-                <NavLink to="/" className="header__nav--link">Accueil</NavLink>
-                <NavLink to="/About" className="header__nav--link">A propos</NavLink>
+                <NavLink to="/" className={({ isActive }) => isActive ? "isActive" : ""}><p>Accueil</p></NavLink>
+                <NavLink to="/About" className={({ isActive }) => isActive ? "isActive" : ""}><p>A propos</p></NavLink>
             </nav>
         </header>
     )

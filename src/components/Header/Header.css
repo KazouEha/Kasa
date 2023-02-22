@@ -21,7 +21,9 @@
   padding-left: 16px;
   text-align: center;
   color: #FF6060;
+  text-decoration: none;
 }
-.header__nav--link {
-  text-decoration: underline;
+
+.isActive p {
+  border-bottom: 2px solid #FF6060;
 }/*# sourceMappingURL=header.css.map */

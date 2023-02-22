@@ -15,16 +15,16 @@
 .houseInfo__loc--where {
   color: #FF6060;
   font-size: 14px;
-  height: 22px;
   margin-bottom: 20px;
 }
 .houseInfo__loc--tags {
   display: flex;
   flex-direction: row;
-  height: 50px;
+  flex-wrap: wrap;
 }
 .houseInfo__prez {
   display: flex;
+  margin-top: 20px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -45,12 +45,10 @@
   border-radius: 100%;
 }
 
-.disable {
-  display: none;
-}
-
-.active {
-  display: block;
+.houseCollapse {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
 }
 
 @media (min-width: 500px) {
@@ -60,18 +58,24 @@
     width: 100%;
   }
   .houseInfo__prez {
+    margin-top: 0;
     flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .houseInfo__prez--review {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
     justify-content: flex-end;
   }
 }
 @media (min-width: 800px) {
   .houseInfo__loc--name {
     font-size: 36px;
-    height: 51px;
   }
   .houseInfo__loc--where {
     font-size: 18px;
-    height: 26px;
   }
   .houseInfo__prez--host-name {
     font-size: 18px;
@@ -79,5 +83,14 @@
   .houseInfo__prez--host-img {
     width: 64px;
     height: 64px;
+  }
+  .houseCollapse {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .houseCollapse .houseCollapse__div {
+    -moz-columns: 1;
+         columns: 1;
   }
 }/*# sourceMappingURL=House.css.map */

@@ -1,5 +1,6 @@
 import './Gallery.css';
 import Card from '../../components/Cards/Card';
+import Loader from '../../components/Loader/Loader';
 import React,{useState, useEffect} from 'react';
 import {fetchData} from '../../controller/house';
 
@@ -27,7 +28,7 @@ function Gallery()
     return(
         
         <section className="sectionGallery">
-            { isLoading ? "coucou" :
+            { isLoading ? <Loader /> :
                 (
                     <>
                         <div className="gallery">

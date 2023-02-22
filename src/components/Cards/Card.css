@@ -39,11 +39,14 @@
 
 @media (min-width: 1000px) {
   .divCard {
-    padding: 25px;
+    padding: 35px;
   }
   .card {
     height: 340px;
     width: 340px;
+    border-radius: 25px;
+  }
+  .card__Filter {
     border-radius: 25px;
   }
 }/*# sourceMappingURL=Card.css.map */

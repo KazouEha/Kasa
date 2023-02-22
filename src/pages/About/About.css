@@ -1,0 +1,17 @@
+.aboutCollapse {
+  display: flex;
+  width: 100%;
+}
+.aboutCollapse__div {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  .aboutCollapse__div {
+    width: 80%;
+  }
+}/*# sourceMappingURL=About.css.map */
