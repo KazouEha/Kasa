@@ -1,3 +1,7 @@
+/**
+ * fetch data from houses.json
+ * @returns 
+ */
 export async function fetchData()
 {
     try {
@@ -19,7 +23,12 @@ export async function fetchData()
     
     
     
-
+/**
+ * fetch data where params is an Id of one of the houses
+ * 
+ * @param {*} params 
+ * @returns 
+ */
 export async function getHouseById(params)
     {
         try {

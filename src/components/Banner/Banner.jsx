@@ -1,6 +1,12 @@
 import './Banner.css';
 
-
+/**
+ * Banner component will be used on home page and about page only
+ * 
+ * @param {*} img background picture for the banner
+ * @param {*} txt optionnal txt for the banner
+ * @returns 
+ */
 function Banner({img ,txt})
 {
     return(

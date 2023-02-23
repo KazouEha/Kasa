@@ -5,7 +5,14 @@ import React,{useState, useEffect} from 'react';
 import {fetchData} from '../../controller/house';
 
 
-
+/**
+ * Component Gallery will be used on the home page and will contain as many components cards as there is houses to show in houses.json
+ * use of usestate to set a "isloading" variable set to true at first, to show the Loader component during the settimeout then set to false to show the gallery component loaded
+ * use of useEffect to fetch data from houses.json, fetchdata is imported from our controller
+ * then use of data.map to browse the data and create Card component for every item in data.map
+ * 
+ * @returns 
+ */
 function Gallery()
 {
 

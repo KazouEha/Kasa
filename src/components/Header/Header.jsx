@@ -2,6 +2,13 @@ import logo from './assets/LOGO_header.png';
 import './Header.css';
 import { NavLink } from 'react-router-dom';
 
+
+/**
+ * Component Header shown on every page
+ * Use of Navlink component on the navbar to redirect user to the pages and set isActive status to the different pages
+ * 
+ * @returns 
+ */
 function Header()
 {
     

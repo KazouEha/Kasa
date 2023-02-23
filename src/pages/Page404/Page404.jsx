@@ -1,6 +1,14 @@
 import { NavLink } from "react-router-dom";
 import './Page404.css';
 
+
+/**
+ * page 404 in case of nav errors
+ * shown if the url doesn't match with any of our pages
+ * use of navlink component to get back to the home page
+ * 
+ * @returns 
+ */
 function Page404()
 {
     return(

@@ -3,6 +3,18 @@ import ArrowDown from './assets/arrowDown.png';
 import ArrowUp from './assets/arrowUp.png';
 import './Collapse.css';
 
+/**
+ * Component Collapse will be used on about page and house page
+ * Using a useState to check on the collapse's value
+ * if it's set to false => arrow down & only title div visible
+ * if it's set to true => arrow up & div content visible
+ * a click on arrow will change useState value
+ * for the content we use a function renderContent which will test the type of data we get either it's a string (data.description) or if it's an array (data.equipments)
+ * 
+ * @param {*} title 
+ * @param {*} content 
+ * @returns 
+ */
 function Collapse({title, content})
 {
     

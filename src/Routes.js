@@ -5,6 +5,12 @@ import House from './pages/House/House';
 import About from './pages/About/About';
 import Page404 from './pages/Page404/Page404';
 
+/**
+ * Use of route & and routes function from react-router-dom and import here all the pages
+ * List of routes we use on our react app : Home, House, About and 404 in case of errors
+ * 
+ * @returns 
+ */
 function RoutesList()
 {
     return(

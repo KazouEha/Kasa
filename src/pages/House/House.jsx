@@ -9,7 +9,19 @@ import Loader from '../../components/Loader/Loader';
 import Tag from '../../components/Tag/Tag';
 import './House.css';
 
-
+/**
+ * House page
+ * use of useParams to get the house id in the url
+ * use of useEffect to fetch data using the id got with useParams with function getHouseById from our controller
+ * use of useState to set isLoading to use the Loader component
+ * 
+ * Use of Loader component to await the loaded datas
+ * Use of Carrousel component to show the data.pictures from the getHousebyId function we used in the useEffect
+ * Use of Collapse component to show the data.description & data.equipments and we add a title prop
+ * Use of Review component the show the data.rating
+ * Use of Tag component to thow the different data.tags, here we browse an array data.tags and for every tag we create a Tag component using the tag value
+ * @returns 
+ */
 function House() 
   {
     const [data,setData]=useState();

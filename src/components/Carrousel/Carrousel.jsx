@@ -4,6 +4,19 @@ import { useState } from 'react';
 import arrowLeft from './assets/arrowleft.png';
 import arrowRight from './assets/arrowright.png';
 
+
+/**
+ * Components Carrousel will be used on the house page
+ * Components wich uses a useState with index to browse the array
+ * Click on the arrows will show the previous or next picture
+ * In case it's the last picture, the next one will be the first
+ * In case it's the first picture, the previous one will be the last
+ * A string is shown at the end of the div to see which picture we're looking at and how many there is to see
+ * In case there is only one picture, the arrows and the index will be hidden
+ *
+ * @param {*} imgArray array of pictures to illustrate the house
+ * @returns 
+ */
 function Carrousel(imgArray)
 {
         const [index, setIndex] = useState(0); 

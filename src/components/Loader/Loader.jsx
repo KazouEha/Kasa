@@ -1,6 +1,11 @@
 import React from 'react';
 import './Loader.css';
 
+
+/**
+ * Loader component used on home page (in the gallery component) and on house page while the datas are loading
+ * 
+ */
 function Loader() {
 
   return (
