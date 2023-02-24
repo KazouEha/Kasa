@@ -17,7 +17,7 @@ function RoutesList()
         <Routes>
             <Route path='/Home' element={<Home />} />
             <Route path='/' element={<Home />} />
-            <Route path='/House/:id' element={<House />} />
+            <Route path='House/:id' element={<House />} />
             <Route path='/About' element={<About />} />
             <Route path='*' element={<Page404 />} /> 
         </Routes>

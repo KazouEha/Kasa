@@ -25,7 +25,7 @@ function Gallery()
                 setTimeout(() => {
                     setData(locations);
                     setLoading(false);
-                }, 2000);
+                }, 1000);
                 })
             .catch((err) => {
                console.log(err);
@@ -37,14 +37,11 @@ function Gallery()
         <section className="sectionGallery">
             { isLoading ? <Loader /> :
                 (
-                    <>
-                        <div className="gallery">
-                            {
-                                data && data.length>0 && data.map((item)=><Card key={item.id} houseTxt={item.title} houseId={item.id} houseImg={item.cover} />)
-                            }
-                        </div>
-                    </>
-        
+                    <div className="gallery">
+                        {
+                            data && data.length>0 && data.map((item)=><Card key={item.id} houseTxt={item.title} houseId={item.id} houseImg={item.cover} />)
+                        }
+                    </div>
                 )
             }
         </section>

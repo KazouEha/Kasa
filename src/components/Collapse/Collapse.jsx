@@ -24,7 +24,7 @@ function Collapse({title, content})
         setIsOpen(!isOpen)
     }
 
-    const renderContent = () => {
+    const whatContent = () => {
         if (typeof content === "string") {
           return <p>{content}</p>;
         } else if (Array.isArray(content)) {
@@ -39,20 +39,12 @@ function Collapse({title, content})
             <div className="collapse">
                 <div onClick={clickOpenClose} className="collapse__title">
                     <p className="collapse__title--txt">{title}</p>
-                    { 
-                      isOpen ? 
-                      ( 
-                        <><img className="collapse__title--btn" src={ArrowUp} alt="fleche vers le haut" /></> 
-                      ) :
-                      (
-                        <><img className="collapse__title--btn" src={ArrowDown} alt="fleche vers le haut" /></> 
-                      )
-                    }
+                    <img className="collapse__title--btn" src={isOpen ?ArrowUp:ArrowDown} alt="fleche vers le haut" />
                 </div>
                 {
                     isOpen && 
                     <div className="collapse__content">
-                        <div className="collapse__content--content">{renderContent()}</div>
+                        <div className="collapse__content--content">{whatContent()}</div>
                     </div>
                 }
             </div>
