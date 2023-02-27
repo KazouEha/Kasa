@@ -15,10 +15,10 @@ function RoutesList()
 {
     return(
         <Routes>
-            <Route path='/Home' element={<Home />} />
+            <Route path='/home' element={<Home />} />
             <Route path='/' element={<Home />} />
-            <Route path='House/:id' element={<House />} />
-            <Route path='/About' element={<About />} />
+            <Route path='/house/:id' element={<House />} />
+            <Route path='/about' element={<About />} />
             <Route path='*' element={<Page404 />} /> 
         </Routes>
     )
