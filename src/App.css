@@ -6,11 +6,18 @@ body {
   font-weight: 500;
 }
 
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 main {
-  max-width:90%;
+  width:90%;
   margin: auto;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 
