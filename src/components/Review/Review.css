@@ -10,8 +10,6 @@
 }
 
 @media (min-width: 800px) {
-    .stars {}
-
     .stars__star {
         width: 30px;
         height: 30px;
