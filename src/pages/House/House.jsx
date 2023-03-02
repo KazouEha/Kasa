@@ -23,7 +23,8 @@ import './House.css';
  * @returns 
  */
 function House() 
-  {
+{
+
     const [data,setData]=useState(null);
     const[isLoading, setLoading]= useState(true);
     const {id} = useParams();
@@ -45,6 +46,7 @@ function House()
     },[id])
 
     return (
+
         <>
             <main>
                 {
@@ -93,7 +95,8 @@ function House()
                 
             </main>
         </>
+        
     )
-  }
+}
 
 export default House;

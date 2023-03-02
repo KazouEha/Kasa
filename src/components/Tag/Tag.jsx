@@ -12,9 +12,10 @@ function Tag({tagTxt})
 {
     return(
             
-            <div className="tag">
-                    {tagTxt}
-            </div>
+        <div className="tag">
+                {tagTxt}
+        </div>
+        
     )
 }
 

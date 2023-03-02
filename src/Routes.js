@@ -14,6 +14,7 @@ import Page404 from './pages/Page404/Page404';
 function RoutesList()
 {
     return(
+
         <Routes>
             <Route path='/home' element={<Home />} />
             <Route path='/' element={<Home />} />
@@ -21,6 +22,7 @@ function RoutesList()
             <Route path='/about' element={<About />} />
             <Route path='*' element={<Page404 />} /> 
         </Routes>
+        
     )
 }
 

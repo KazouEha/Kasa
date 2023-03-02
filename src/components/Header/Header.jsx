@@ -13,6 +13,7 @@ function Header()
 {
     
     return(
+
         <header className="header">
             <img className="header__logo" src={logo} alt="logo kasa" />
             <nav className="header__nav">
@@ -20,7 +21,9 @@ function Header()
                 <NavLink to="/About" className={({ isActive }) => isActive ? "isActive" : ""}><p>A propos</p></NavLink>
             </nav>
         </header>
+
     )
+    
 }
 
 export default Header

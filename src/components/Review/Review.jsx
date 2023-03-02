@@ -24,9 +24,11 @@ function Review({note})
     }
 
     return (
-            <div className="stars">
-                {review}
-            </div>
+
+        <div className="stars">
+            {review}
+        </div>
+
     )
 }
 

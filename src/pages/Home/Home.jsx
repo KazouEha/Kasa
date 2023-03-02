@@ -10,17 +10,21 @@ import Gallery from '../../components/Gallery/Gallery';
  * @returns 
  */
 function Home() 
-  {
+{
 
-    const bannerText = "Chez vous, partout et ailleurs";
-    return (
+  const bannerText = "Chez vous, partout et ailleurs";
+  
+  return (
+
     <>
         <main>
             <Banner txt={bannerText} img={bannerImg} />
             <Gallery />
         </main>
     </>
-    )
-  }
+
+  )
+
+}
 
 export default Home;

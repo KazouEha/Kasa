@@ -19,7 +19,6 @@ function Page404()
                 <p className="p404__txt">Oups! La page que vous demandez n'existe pas.</p>
                 <NavLink to="/Home" className="p404__link">Retourner sur la page d’accueil</NavLink>
             </div>
-            
         </div>
         
     )

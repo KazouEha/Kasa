@@ -35,6 +35,7 @@ function Gallery()
     return(
         
         <section className="sectionGallery">
+
             { isLoading ? <Loader /> :
                 (
                     <div className="gallery">
@@ -44,7 +45,9 @@ function Gallery()
                     </div>
                 )
             }
+
         </section>
+        
     )
 }
 
